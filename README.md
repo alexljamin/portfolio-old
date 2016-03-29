@@ -1,5 +1,3 @@
-# [Start Bootstrap](http://startbootstrap.com/) - [Clean Blog](http://startbootstrap.com/template-overviews/clean-blog/)
-
 This blog is build on [Clean Blog](http://startbootstrap.com/template-overviews/clean-blog/) theme. Kudos to [David Miller](https://twitter.com/davidmillerskt), Managing Parter at [Iron Summit Media Strategies](http://www.ironsummitmedia.com/), who provides this cool template.
 
 ## Copyright and License
