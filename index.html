@@ -1,24 +1,51 @@
-<!doctype html>
-<html lang="eng">
-<html>
-    <head>
-        <meta encoding="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta author="Aleksandr Ljamin">
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <div class="video">
-            <iframe frameborder="0" height="100%" width="100%" 
-                src="https://youtube.com/embed/njCDZWTI-xg?autoplay=1&controls=0&showinfo=0&autohide=1" allowfullscreen="" volume="0">
-            </iframe>
-        </div>
-        <!--<div class="social">
-            <a href="https://twitter.com/alljamin" class="twitter-follow-button" data-show-count="true">Follow @alljamin</a>
-        </div>    -->
-            
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>tubular, a YouTube Background Player jQuery Plugin | Sean McCambridge Design</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!--<link rel="icon" type="image/png" href="/media/layout/logo.png" />-->
+	<link href="css/screen.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.2/css/font-awesome.min.css">
+</head>
+<body>
+<div id="wrapper" class="clearfix">
+	<div id="main">
 
-        
-        <!--<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>-->
-    </body>
+		<div class="black-15">
+		<h1>Hi there!</h1>
+		<p>My name is Aleksandr and I like to create interesting web experiences.</p>
+		</div>
+		
+		<div class="black-15">
+			<h3>Find me here:</h3>
+			
+			<!--Stackoverflow-->
+			<a href="http://stackoverflow.com/users/5153030/alljamin">
+			<img src="http://stackoverflow.com/users/flair/5153030.png" width="208" height="58" alt="profile for alljamin at Stack Overflow, Q&amp;A for professional and enthusiast programmers" title="profile for alljamin at Stack Overflow, Q&amp;A for professional and enthusiast programmers"></a>
+			
+			<!--Twitter-->
+			<a href="https://twitter.com/alljamin" class="twitter-follow-button" data-show-count="true">Follow @alljamin</a> 
+			<!--LinkedIn-->
+			<!--<script src="https://platform.linkedin.com/in.js" type="text/javascript"></script>
+			<script type="IN/MemberProfile" data-id="https://www.linkedin.com/in/alljamin" data-format="inline" data-related="false"></script>-->
+			
+			<!--Github-->
+			<a class="github-button" href="https://github.com/alljamin" data-count-href="/alljamin/followers" data-count-api="/users/alljamin#followers" data-count-aria-label="# followers on GitHub" aria-label="Follow @alljamin on GitHub">Follow @alljamin</a>
+		</div>
+		
+		<p id="video-controls" class="black-15">Video controls:<br /><a href="#" class="tubular-play"><i class="fa fa-play" aria-hidden="true" title="Play"></i></a> | <a href="#" class="tubular-pause"><i class="fa fa-pause" aria-hidden="true" title="Pause"></i></a> | <a href="#" class="tubular-volume-up"><i class="fa fa-volume-up" aria-hidden="true" title="Volume Up"></i></a> | <a href="#" class="tubular-volume-down"><i class="fa fa-volume-down" aria-hidden="true" title="Volume Down"></i></a> | <a href="#" class="tubular-mute"><i class="fa fa-volume-off" aria-hidden="true" title="Mute"></i></a></p>
+		
+	</div>
+</div>
+
+<script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
+
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js" type="text/javascript"></script>
+<script type="text/javascript" charset="utf-8" src="js/jquery.tubular.1.0.js"></script>
+<script type="text/javascript" charset="utf-8" src="js/index.js"></script>
+
+</body>
 </html>
