@@ -15,6 +15,9 @@ p{
 h3{
   margin: 0px 0px 14px 0px;
 }
+.container, .box a{
+  color: white;
+}
 .container{
   font-family: 'Roboto', sans-serif;
   display: flex;
@@ -22,12 +25,11 @@ h3{
   flex-flow: row wrap;
   justify-content: flex-start;
   align-items: flex-start;
-  color: white;
 }
 .container .box{
   background-color: rgba(0,0,0, 0.3);
-  height: 220px;
-  width: 220px;
+  height: 208px;
+  width: 208px;
 }
 .social, .email, .greeting{
   padding: 10px 10px 10px 10px;
@@ -36,12 +38,11 @@ h3{
   display: flex;
   text-align: center;
   justify-content: center;
+  align-items: center;
 }
 .box a{
-  color: white;
   text-decoration: none;
 }
 .box a:hover{
-  background: #d82121;
-  transition: background 150ms ease-in-out;
+  background: rgba(0,0,0, 0.5);
 }
