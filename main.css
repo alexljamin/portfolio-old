@@ -33,15 +33,15 @@ h3{
   padding: 10px 10px 10px 10px;
 }
 .email{
+  display: flex;
   text-align: center;
   justify-content: center;
-  display: flex;
 }
-.contact a{
+.box a{
   color: white;
   text-decoration: none;
 }
-.contact a:hover{
+.box a:hover{
   background: #d82121;
   transition: background 150ms ease-in-out;
 }
