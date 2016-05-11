@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700);
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500,700);
 
 html { 
   background: url(http://i.giphy.com/26CYAE1nLf19gYXq8.gif) no-repeat center center fixed; 
@@ -15,6 +15,7 @@ p{
 h3{
   margin: 0px 0px 14px 0px;
 }
+
 .container, .box a{
   color: white;
 }
@@ -23,26 +24,27 @@ h3{
   display: flex;
   display: -webkit-flex;
   flex-flow: row wrap;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
 }
 .container .box{
-  background-color: rgba(0,0,0, 0.3);
+  background-color: rgba(0,0,0, 0.2);
   height: 208px;
   width: 208px;
 }
 .social, .email, .greeting{
   padding: 10px 10px 10px 10px;
 }
-.email{
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
+.contact{
+  margin-top: 4px;
 }
-.box a{
+.box .contact a{
   text-decoration: none;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 2px 2px 2px 2px;
+  font-weight: 300;
 }
 .box a:hover{
-  background: rgba(0,0,0, 0.5);
+  background: rgba(0,0,0, 0.3);
 }
