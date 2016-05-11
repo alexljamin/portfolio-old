@@ -1,0 +1,47 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700);
+
+html { 
+  background: url(http://i.giphy.com/26CYAE1nLf19gYXq8.gif) no-repeat center center fixed; 
+  background-size: cover;
+}
+
+h1{
+  margin: 0px 0px 0px 0px;
+}
+p{
+  margin: 14px 0px 0px 0px; 
+}
+h3{
+  margin: 0px 0px 14px 0px;
+}
+.container{
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  display: -webkit-flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  color: white;
+}
+.container .box{
+  background-color: rgba(0,0,0, 0.3);
+  height: 220px;
+  width: 220px;
+}
+.social, .email, .greeting{
+  padding: 10px 10px 10px 10px;
+}
+.email{
+  text-align: center;
+  justify-content: center;
+  display: flex;
+}
+.contact a{
+  color: white;
+  text-decoration: none;
+}
+.contact a:hover{
+  background: #d82121;
+  transition: background 150ms ease-in-out;
+}
