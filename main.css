@@ -38,8 +38,10 @@ h3{
 .contact{
   margin-top: 4px;
 }
-.box .contact a{
+a{
   text-decoration: none;
+}
+.box .contact a{
   border: 1px solid white;
   border-radius: 5px;
   padding: 2px 2px 2px 2px;
