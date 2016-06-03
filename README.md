@@ -1,6 +1,6 @@
 I'm building this baby from scratch.
 
-No love to templates.
+~~No~~ Some love to templates.
 
 Be patient!
 
