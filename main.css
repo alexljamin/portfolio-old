@@ -25,28 +25,34 @@ h3{
   display: -webkit-flex;
   flex-flow: row wrap;
   justify-content: center;
-  align-items: center;
+  margin-top: 15%;
 }
+
 .container .box{
-  background-color: rgba(0,0,0, 0.2);
+  background-color: rgba(157,113,94, 0.6);
   height: 208px;
   width: 208px;
 }
-.social, .email, .greeting{
+.social, .greeting, .map{
   padding: 10px 10px 10px 10px;
-}
-.contact{
-  margin-top: 4px;
 }
 a{
   text-decoration: none;
 }
-.box .contact a{
-  border: 1px solid white;
-  border-radius: 5px;
-  padding: 2px 2px 2px 2px;
-  font-weight: 300;
+.email a{
+  font-weight: 700;
+  display: block;
+  text-align: center;
+  line-height: 228px;
+  width: 228px;
+  color: white;
+  background-color: rgba(157,113,94, 0.6);
+  background-size: cover;
+  background-size: 228;
 }
-.box a:hover{
-  background: rgba(0,0,0, 0.3);
+.email a:hover{
+  background: rgba(157,113,94, 0.8);
+}
+.greeting a:hover{
+  background: rgba(34,261,66, 0.5);
 }
