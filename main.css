@@ -39,7 +39,7 @@ h3{
 a{
   text-decoration: none;
 }
-.email a{
+.contact a{
   font-weight: 700;
   display: block;
   text-align: center;
@@ -50,9 +50,9 @@ a{
   background-size: cover;
   background-size: 228;
 }
-.email a:hover{
+.contact a:hover{
   background: rgba(157,113,94, 0.8);
 }
 .greeting a:hover{
-  background: rgba(34,261,66, 0.5);
+  background: rgba(157,113,94, 0.8);
 }
