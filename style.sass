@@ -1,51 +1,126 @@
 @charset "UTF-8"
-@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500,700)
-
-html 
-  background: url(http://i.giphy.com/26CYAE1nLf19gYXq8.gif) no-repeat center center fixed
-  background-size: cover
-h1 
-  margin: 0px
-
-p 
-  margin: 14px 0px 0px 0px
-
-h3 
-  margin: 0px 0px 14px 0px
-
-.container, .box a 
-  color: white
-
+// @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,900')
+*
+  box-sizing: border-box
+html
+  background-color: rgb(255,255,255)
+  background-image: linear-gradient(45deg, rgb(255,255,255), rgb(230,230,230))
+body
+  margin: 25px
+  font-size: 20px
 .container 
-  font-family: 'Roboto', sans-serif
-  display: flex
-  display: -webkit-flex
-  flex-flow: row wrap
-  justify-content: center
-  margin-top: 15%
-  .box 
-    background-color: rgba(157, 113, 94, 0.6)
-    height: 208px
-    width: 208px
-
-.social, .greeting, .map 
-  padding: 10px
-
-a 
-  text-decoration: none
-
-.contact a 
-  font-weight: 700
-  display: block
-  text-align: center
-  line-height: 228px
-  width: 228px
-  color: white
-  background-color: rgba(157, 113, 94, 0.6)
-  background-size: cover
-  background-size: 228
-  &:hover
-    background: rgba(157, 113, 94, 0.8)
-
-.greeting a:hover
-  background: rgba(157, 113, 94, 0.8) 
+  font-family: 'Source Sans Pro', sans-serif
+  margin: 0 auto
+  max-width: 800px
+  h2
+    font-size: 2rem
+  a
+    text-decoration: none
+  ul
+    list-style-type: none
+    padding: 0
+    margin: 0
+    text-align: center
+    li 
+      display: inline-block
+      a
+        padding: 10px
+  header, #intro, #projects
+    nav a, h1 a, ul li a
+      position: relative
+      &:before
+        content: ""
+        position: absolute
+        width: 100%
+        height: 2px
+        bottom: 0
+        left: 0
+        background-color: #000
+        visibility: hidden
+        -webkit-transform: scaleX(0)
+        transform: scaleX(0)
+        -webkit-transition: all 0.3s ease-in-out 0s
+        transition: all 0.3s ease-in-out 0s
+      &:hover:before
+        visibility: visible
+        -webkit-transform: scaleX(1)
+        transform: scaleX(1)
+  header
+    margin: 120px 0px
+    display: flex
+    a img
+      max-width: 40px
+    nav
+      margin-left: auto
+      line-height: 40px
+      a
+        font-size: 1.3rem
+        padding: 10px
+        font-weight: 400
+        color: rgba(0,0,0,0.5)
+        &:hover
+          color: rgb(0,0,0)
+  section
+    border-bottom: 1px solid rgba(0,0,0,0.5)
+    padding-bottom: 60px
+    margin-bottom: 60px
+  #intro, #projects, footer
+    h1, h2, h3
+      line-height: 1.2
+    h1, h2
+      font-weight: 900
+      margin: 0 0 10px
+    h3
+      margin: 0
+  #intro, #projects
+    h3
+      font-size: 1.3rem
+      font-weight: 400
+      text-transform: uppercase
+      color: rgba(0,0,0, 0.5)
+    h1 a, ul li a
+      color: rgb(0,0,0)
+  #intro
+    h1
+      font-size: 2.5rem
+      span
+        color: rgb(31, 53, 226)
+  #projects
+    h3
+      font-size: 1.1rem
+    .project-pics
+      padding: 60px 0
+      display: flex
+      flex-flow: row wrap
+      justify-content: center
+      img
+        align-self: center
+        max-width: 33.33333%
+        padding: 0 5px
+        margin: 0
+        // box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24)  
+        @media (max-width:768px)
+          max-width: 100%
+          padding: 0 0 10px
+          &:last-child
+            padding: 0
+    ul 
+      margin-top: 10px
+      li a
+        color: rgba(0,0,0,0.5)
+        &:hover
+          color: rgb(0,0,0)
+  #projects, footer
+    h2, h3
+      text-align: center
+  footer
+    h3
+      font-size: 1.4rem
+      a
+        color: rgb(31, 53, 226)
+    ul 
+      padding: 15px 0 0
+      li a, ul li ul li a
+        padding: 0
+    ul li ul li
+      display: block
