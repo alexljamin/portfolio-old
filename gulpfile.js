@@ -19,7 +19,7 @@ gulp.task('browserSync', function(){
 });
 
 gulp.task('sass', function(){
-    gulp.src('./docs/*.sass')
+    gulp.src('./src/*.sass')
         .pipe(sass())
         .pipe(minifyCSS())
         .pipe(rename('main.min.css'))
@@ -30,12 +30,12 @@ gulp.task('sass', function(){
 });
 
 gulp.task('copy-files', function(){
-    gulp.src("./docs/*.html")
+    gulp.src("./src/*.html")
         .pipe(gulp.dest('./dist'))
         .pipe(browserSync.reload({
             stream: true
         }))
-    gulp.src("./docs/assets/*.*")
+    gulp.src("./src/assets/*.*")
         .pipe(gulp.dest('./dist/assets'))
         .pipe(browserSync.reload({
             stream: true
@@ -43,8 +43,8 @@ gulp.task('copy-files', function(){
 });
 
 gulp.task('watch', function(){
-    gulp.watch('./docs/*.sass', ['sass'])
-    gulp.watch('./docs/*.html', ['copy-files'])
+    gulp.watch('./src/*.sass', ['sass'])
+    gulp.watch('./src/*.html', ['copy-files'])
 });
 
 gulp.task('default', ['clean:dist','browserSync', 'sass', 'copy-files', 'watch']);
