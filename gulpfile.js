@@ -3,6 +3,11 @@ var gulp = require('gulp'),
     sass = require('gulp-sass'),
     rename = require('gulp-rename')
     browserSync = require('browser-sync').create();
+    del = require('del');
+
+gulp.task('clean:dist', function(){
+    del.sync('./dist/*.*')
+})
 
 gulp.task('browserSync', function(){
     browserSync.init({
@@ -14,7 +19,7 @@ gulp.task('browserSync', function(){
 });
 
 gulp.task('sass', function(){
-    gulp.src('./src/*.sass')
+    gulp.src('./docs/*.sass')
         .pipe(sass())
         .pipe(minifyCSS())
         .pipe(rename('main.min.css'))
@@ -25,12 +30,12 @@ gulp.task('sass', function(){
 });
 
 gulp.task('copy-files', function(){
-    gulp.src("./src/*.html")
+    gulp.src("./docs/*.html")
         .pipe(gulp.dest('./dist'))
         .pipe(browserSync.reload({
             stream: true
         }))
-    gulp.src("./src/assets/*.*")
+    gulp.src("./docs/assets/*.*")
         .pipe(gulp.dest('./dist/assets'))
         .pipe(browserSync.reload({
             stream: true
@@ -38,8 +43,8 @@ gulp.task('copy-files', function(){
 });
 
 gulp.task('watch', function(){
-    gulp.watch('./src/*.sass', ['sass'])
-    gulp.watch('./src/*.html', ['copy-files'])
+    gulp.watch('./docs/*.sass', ['sass'])
+    gulp.watch('./docs/*.html', ['copy-files'])
 });
 
-gulp.task('default', ['browserSync', 'sass', 'copy-files', 'watch']);
+gulp.task('default', ['clean:dist','browserSync', 'sass', 'copy-files', 'watch']);
