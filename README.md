@@ -1,7 +1,5 @@
 ## Build process for alljamin.github.io
 
----
-
 ### System preparation
 1. Clone or [download](https://github.com/alljamin/alljamin.github.io/archive/master.zip) this repository
 2. Get [Node.js](https://nodejs.org/)
