@@ -9,7 +9,7 @@ body
   margin: 25px
   font-size: 20px
 .container 
-  font-family: 'Source Sans Pro', sans-serif
+  font-family: "Source Sans Pro", sans-serif
   margin: 0 auto
   max-width: 800px
   h2
@@ -46,7 +46,7 @@ body
         -webkit-transform: scaleX(1)
         transform: scaleX(1)
   header
-    margin: 120px 0px
+    margin: 120px 0
     display: flex
     a img
       max-width: 40px
@@ -126,11 +126,11 @@ body
       text-align: center
   #about
     display: flex
-    h1
+    h2
       margin: 0 0 10px
       font-weight: 900
       line-height: 1.2
-    div
+    .about-content
       padding: 0 0 0 50px
       column-count: 2
       column-gap: 2rem
@@ -142,14 +142,13 @@ body
           color: rgb(31, 53, 226)
     @media (max-width:768px)
       display: block
-      h1
+      h2
         text-align: center
         margin: 0 0 20px
-      div
+      .about-content
         column-count: 1
         column-gap: 0
         padding: 0
-
   footer
     h3
       font-size: 1.4rem
