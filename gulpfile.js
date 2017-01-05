@@ -47,4 +47,4 @@ gulp.task('watch', function(){
     gulp.watch('./src/*.html', ['copy-files'])
 });
 
-gulp.task('default', ['clean:docs', 'BrowserSync', 'sass', 'copy-files', 'watch']);
+gulp.task('default', ['clean:docs', 'browserSync', 'sass', 'copy-files', 'watch']);
