@@ -48,27 +48,11 @@ body
   header
     margin: 120px 0
     display: flex
-    flex: 1 100%
-    @media (max-width: 768px)
-      flex-direction: column
-      // align-content: center
-      // justify-content: center
-      // flex-basis: auto
-    a 
-      @media (max-width: 768px)
-        padding: 0 0 15px
-      img
+    a img
         max-width: 40px
-        @media (max-width: 768px)
-          display: block
-          margin: 0 auto
-          max-width: 100%
     nav
       margin-left: auto
       line-height: 40px
-      @media (max-width: 768px)
-        display: flex
-        justify-content: space-between
       a
         font-size: 1.3rem
         padding: 10px
@@ -76,7 +60,21 @@ body
         color: rgba(0,0,0,0.5)
         &:hover
           color: rgb(0,0,0)
-
+    @media (max-width: 768px)
+      flex-direction: column
+      a
+        padding: 0 0 15px
+        img
+          display: block
+          margin: 0 auto
+          max-width: 100%
+      nav
+        display: flex
+        justify-content: center
+        margin: 0
+    @media (max-width: 450px)
+      nav
+        justify-content: space-between
   section, main
     border-bottom: 1px solid rgba(0,0,0,0.5)
     padding-bottom: 60px
