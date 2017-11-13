@@ -1,4 +1,4 @@
-##alljamin.github.io/portfolio
+## alljamin.github.io/portfolio
 Check out the [live demo](https://alljamin.github.io/portfolio). Feel free to use .psd mockup as an example for creating your own website. Do not forget to mention the author when using it in your projects.
 
 ### Getting started
